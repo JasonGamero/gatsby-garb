@@ -18,6 +18,8 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          author
+          createdAt
         }
       }
     }
@@ -36,9 +38,9 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          Created {data.site.siteMetadata.createdAt}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org">{data.site.siteMetadata.author}</a>
         </footer>
       </div>
     </>
