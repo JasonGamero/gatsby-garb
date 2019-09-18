@@ -4,3 +4,5 @@ date: "2019-09-11"
 ---
 
 Hello, this is my thrid post made using markdown
+
+![Tranquil Beach](tranquil-beach.webp)
